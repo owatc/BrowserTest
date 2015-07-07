@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace BrowserApp
 {
@@ -19,7 +20,14 @@ namespace BrowserApp
 
         private void button1_Click(object sender, EventArgs e)
         {
+            webBrowser1.Navigate("https://www.google.com");
 
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            var el = webBrowser1.Document.GetElementById("lst-ib");
+            el.SetAttribute("value", "test");
         }
     }
 }
