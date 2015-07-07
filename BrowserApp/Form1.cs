@@ -30,6 +30,8 @@ namespace BrowserApp
             //this is a test
             var el = webBrowser1.Document.GetElementById("lst-ib");
             el.SetAttribute("value", "test");
+
+            //this is another test
         }
     }
 }
