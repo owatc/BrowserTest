@@ -26,6 +26,8 @@ namespace BrowserApp
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+
+            //this is a test
             var el = webBrowser1.Document.GetElementById("lst-ib");
             el.SetAttribute("value", "test");
         }
