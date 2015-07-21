@@ -22,6 +22,8 @@ namespace BrowserApp
         {
             webBrowser1.Navigate("https://www.google.com");
 
+            //test
+
         }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -30,6 +32,16 @@ namespace BrowserApp
             var el = webBrowser1.Document.GetElementById("lst-ib");
             el.SetAttribute("value", "test");
 
+            el.Style.Insert(2, "");
+
+            el.Style.Insert(2, "");
+            el.Style.Insert(2, "");
+            el.Style.Insert(2, "");
+
+
+
+            el.Style.Insert(2, "");
+            el.Style.Insert(2, "");
             el.Style.Insert(2, "");
 
         }
