@@ -31,7 +31,19 @@ namespace BrowserApp
             var el = webBrowser1.Document.GetElementById("lst-ib");
             el.SetAttribute("value", "test");
 
+            el.Style.Insert(2, "");
+
             //this is another test
+
+            //blah blah
+
+
+            var Meggy = new Awesome();
+
+            var brownies;
+            var iceCream;
+            var cake;
+            Meggy += (brownies + iceCream) + cake;
         }
     }
 }
